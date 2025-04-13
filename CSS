@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+.custom-header {
+    font-size: 4em;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the entire navbar horizontally */
+    align-items: center; /* Aligns the content vertically */
+    width: 100%; /* Makes the navbar full width */
+    max-width: 1200px; /* Restricts the width to 1200px */
+    margin: 0 auto; /* Ensures the navbar is centered on the page */
+    height: 75px; /* Maintains a consistent height for the navbar */
+    padding: 0 20px; /* Adds spacing inside the navbar */
+}
+
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 250px;
+    height: auto;
+}
+
+.icon img {
+    width: 80px;
+    height: 75px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centers the menu items horizontally */
+    align-items: center; /* Aligns the menu items vertically */
+}
+
+.menu ul {
+    display: flex;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.menu ul li {
+    margin: 0 15px; /* Adds spacing between menu items */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia;
+    transition: 0.4s ease-in-out; /* Adds a smooth transition effect */
+}
+
+.menu ul li a:hover {
+    color: pink; /* Changes color on hover for interaction feedback */
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Centers the search input vertically */
+    margin-left: 20px; /* Adds spacing between the search bar and menu */
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures image is behind the text */
+}
+
+.hero-text {
+    position: relative;
+    margin-top: 100px;
+    z-index: 5; /* Ensures text is above the overlay and image */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-text p {
+    font-family: 'Segoe UI';
+    margin-top: 98px;
+    font-size:large;
+    font-weight:bold;
+    font-style: italic; /* Added to make text italic */
+}
+
+
+.hero-text a{
+    font-family:'Segoe UI';
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.custom-header {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: hotpink;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 200px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: green;
+    color: white;
+}
+
+
+.cta-button:active {
+    transform: none; 
+}
+
+.engagement {
+    text-align: center;
+    background: transparent;
+    color: black;
+    padding: 50px 20px;
+}
+
+.engagement h3{
+    font-size: 2rem;
+    font-family: Georgia;
+    font-weight: bold;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.engagement p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: hotpink;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: green;
+}
+
+.cta-btn:active {
+    transform: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+#about {
+    width: 100%;
+    background-color: #f7d6e0;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+#about h3 {
+    font-family: Georgia;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+#services {
+    text-align: center;
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* adjust this value */
+    background-color: #9CAF88; /* top color */
+    z-index: 0;
+}
+
+#services > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+#services h4 {
+    font-size: 2.5rem;
+    font-family: Georgia;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 280px; 
+    text-align: center;
+    padding: 15px;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 20px; 
+}
+
+.service-item img:hover{
+    transform: scale(1.05);
+}
+
+.service-item h5 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: black;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: gray;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-family: Georgia;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#gallery {
+    background-color: white; /* White background for the gallery section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the box */
+    padding: 30px; /* Adjusts internal spacing */
+    border-radius: 10px; /* Adds smooth corners */
+    margin: 50px auto; /* Centers the section horizontally */
+    max-width: 1200px; /* Restricts the section width */
+    margin-top: 50px; /* Keeps the section positioned well on the page */
+    text-align: center; /* Centers the content */
+    position: relative;
+}
+
+#gallery h2 {
+    font-size: 2.5rem; /* Keeps the title size */
+    font-family: Georgia;
+    color: black;
+    margin-bottom: 40px; /* Spacing below the title */
+    margin-top: 20px; /* Moves the title down to stay within the box */
+    position: relative;
+    text-align: center; /* Centers the title */
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center; /* Horizontally centers the images */
+    gap: 30px; /* Adjusts spacing between images */
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+}
+
+.gallery img {
+    width: auto;
+    height: 220px; /* Slightly increases the image size */
+    max-width: 300px; /* Adjusts the maximum image width */
+    margin: 15px; /* Adds spacing around images */
+    border-radius: 8px; /* Smooth corners for images */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Keeps shadow on individual images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers individual images */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Slightly increases zoom effect on hover */
+}
+
+.contact {
+    background-color: #f1d1dc; /* Pink background */
+    padding: 30px; /* Internal spacing */
+    border-radius: 10px; /* Smooth corners */
+    text-align: center; /* Centers the text inside */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
+.contact h2 {
+    margin-top: 0; /* Removes extra space at the top */
+    font-size: 2rem; /* Adjusts title size */
+    font-family: Georgia; /* Ensures a polished font */
+    color: black; /* Keeps the text readable */
+}
+
+.contact-info {
+    margin-top: 20px; /* Adds spacing between the title and contact details */
+    font-size: 1rem; /* Adjusts size of the details */
+    color: #333; /* A darker shade for readability */
+}
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fde4ec;
+    margin-top: 5px;
+    font-size: 15px;
+  }
